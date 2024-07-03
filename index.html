@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <title>Estatic</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo-icon">
+        <img src="assets/Logo.jpg" alt="Logo" class="logo-img" />
+      </div>
+      <nav class="navbar-links">
+        <a>Home</a>
+        <a href="#our-members">Our Members</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#message-us">Message Us</a>
+      </nav>
+    </header>
+    <main>
+      <!-- Home Section -->
+      <section class="home-section">
+        <div class="content-container">
+          <header class="header-container">
+            <h1 class="welcome-title">
+              Experience the professional and competitive career
+            </h1>
+          </header>
+          <article class="article-container">
+            <p class="description">
+              Here, you'll find opportunity to be part of a supportive and
+              vibrant community that genuinely cares about making a difference.
+              We are deeply committed to improving people's financial well-being
+              by providing personalized guidance and innovative solutions.
+            </p>
+            <br />
+            <button class="home-button">Get started</button>
+          </article>
+        </div>
+      </section>
+      <br />
+      <hr />
+      <div class="content">
+        <!-- Our Members Section -->
+        <section id="our-members">
+          <header>
+            <h1 class="section-title">OUR MEMBERS</h1>
+          </header>
+          <article class="profile-content">
+            <div class="profile-item">
+              <div class="profile-icon profile-1"></div>
+              <p>Rico Alexander Gwee</p>
+              <p>Software Engineer</p>
+            </div>
+            <div class="profile-item">
+              <div class="profile-icon profile-2"></div>
+              <p>Ronald Jackson</p>
+              <p>Cyber Security Manager</p>
+            </div>
+            <div class="profile-item">
+              <div class="profile-icon profile-3"></div>
+              <p>August Lawrence Parker</p>
+              <p>Human Resources Manager</p>
+            </div>
+            <div class="divider"></div>
+          </article>
+        </section>
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+          <h1 class="section-title">PORTFOLIO</h1>
+          <!-- Title outside the container -->
+          <div class="port-container">
+            <div class="image-container">
+              <img
+                src="assets/Profile_1.jpg"
+                alt="Portfolio Image"
+                class="portfolio-image"
+              />
+            </div>
+            <div class="intro-text">
+              <p>
+                Welcome to our website! My name is Rico, and I am currently
+                employed at Estatic, where I hold the position of software
+                engineer. Here, I am excited to present my collection of
+                projects, skills, and experiences that have shaped my
+                professional journey. My passion lies in developing cutting-edge
+                solutions and driving significant impact within my industry.
+              </p>
+            </div>
+            <div class="description-text">
+              <p>
+                In this section, you will discover comprehensive details about
+                the projects I've undertaken, the various technologies I have
+                mastered, and the unique contributions I have made to a range of
+                initiatives. My goal is to illustrate my capability to address
+                complex challenges and deliver exceptional results consistently.
+              </p>
+              <button class="port-button">See more</button>
+            </div>
+          </div>
+        </section>
+        <!-- Message Us Section -->
+        <section id="message-us" class="message-us">
+          <header>
+            <h1 class="section-title">MESSAGE US</h1>
+          </header>
+          <article class="message-container">
+            <!-- Form Section -->
+            <div class="form-container">
+              <form action="" method="POST" class="form">
+                <div class="form-group">
+                  <label for="name">Name :</label>
+                  <input type="text" name="name" id="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="date">Date of Birth :</label>
+                  <input type="date" name="date" id="date" required />
+                </div>
+                <div class="form-group">
+                  <label>Gender :</label>
+                  <div class="gender-options">
+                    <label>
+                      <input
+                        type="radio"
+                        name="gender"
+                        id="Male"
+                        value="Male"
+                      />
+                      Male
+                    </label>
+                    <label>
+                      <input
+                        type="radio"
+                        name="gender"
+                        id="Female"
+                        value="Female"
+                      />
+                      Female
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message :</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="2"
+                    rows="10"
+                  ></textarea>
+                </div>
+                <button
+                  type="button"
+                  id="submit-button"
+                  class="submit-button"
+                  onclick="submitForm()"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+            <!-- Output Section -->
+            <div class="output-container">
+              <div class="container">
+                <p class="output-title">Output</p>
+                <div>
+                  <p><span id="output-name"></span></p>
+                  <p><span id="output-date"></span></p>
+                  <p><span id="output-gender"></span></p>
+                  <p><span id="output-message"></span></p>
+                  <p><span id="output-submission"></span></p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2022 Estatic</p>
+    </footer>
+  </body>
+</html>
